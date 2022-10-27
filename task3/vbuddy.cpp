@@ -1027,7 +1027,7 @@ int vbdOpen() {
     if (input_file == nullptr) 
         perror("Cannot find vbuddy.cfg\n");
     else {
-        char *ignore = fgets(port_name, 80, input_file);
+        char *ignore = fgets(port_name, 80, input_file); // silence error
     }  
     fclose(input_file);
 
